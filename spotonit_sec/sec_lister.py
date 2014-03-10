@@ -3,6 +3,7 @@ import requests
 import spotonit_sec
 import re
 import random
+import sys
 
 def lister(events_page_url_list, num_events=10):
     '''
@@ -72,7 +73,8 @@ if __name__ == '__main__':
         "http://www.workshopsf.org/?page_id=140&id=1328", 
         "http://events.stanford.edu/events/353/35309/"]
     
-    # test_urls = sys.argv[1:]
+    if len(sys.argv) > 1:
+        test_urls = sys.argv[1:]
     import sec_select
     for url in test_urls:
         print lister(sec_select.select(url))
