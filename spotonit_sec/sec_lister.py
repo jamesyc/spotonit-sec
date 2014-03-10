@@ -67,12 +67,12 @@ def lister(events_page_url_list, num_events=10):
 # run module as script, for crappy testing
 if __name__ == '__main__':
 
-    # test_urls = ["http://calendar.boston.com/lowell_ma/events/show/274127485-mrt-presents-shakespeares-will", 
-    #     "http://www.sfmoma.org/exhib_events/exhibitions/513", 
-    #     "http://www.workshopsf.org/?page_id=140&id=1328", 
-    #     "http://events.stanford.edu/events/353/35309/"]
+    test_urls = ["http://calendar.boston.com/lowell_ma/events/show/274127485-mrt-presents-shakespeares-will", 
+        "http://www.sfmoma.org/exhib_events/exhibitions/513", 
+        "http://www.workshopsf.org/?page_id=140&id=1328", 
+        "http://events.stanford.edu/events/353/35309/"]
     
-    test_urls = sys.argv[1:]
+    # test_urls = sys.argv[1:]
     import sec_select
     for url in test_urls:
         print lister(sec_select.select(url))
