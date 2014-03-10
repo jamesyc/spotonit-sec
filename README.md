@@ -6,3 +6,9 @@ This is a python package, which I wrote to be fairly modular. It has two major c
 
 The python package is a very basic MVP state. It's not perfect- it will return links that aren't events, and it's not the fastest program in the world, or have a good testing framework. 
 That being said, it is kinda decent at finding the event links (50% to 100% depending on the source), and generally won't crash.
+
+To use the program, load the package in python. Alternatively, run 
+```
+python sec_lister.py
+```
+in the package folder to test it on the original 4 websites given.
